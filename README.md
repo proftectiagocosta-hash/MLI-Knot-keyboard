@@ -1,5 +1,11 @@
 # MLI-Knot Keyboard
 
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/proftectiagocosta-hash/mli-knot-mind-public/main/assets/matrix-inspired-banner.gif" width="100%" alt="Cyber banner" />
+
+</div>
+
 **MLI-Knot Keyboard** is a small local Windows desktop app that simulates controlled keyboard typing into a field manually selected by the user.
 
 It was created for legitimate situations where a form or desktop field does not accept paste input, but still accepts normal keyboard typing. The user remains in control: open the target app or website manually, click the destination field, start the countdown, and the app types the provided text character by character.
