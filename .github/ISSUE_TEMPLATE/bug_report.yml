@@ -1,0 +1,125 @@
+name: Bug report / Relato de bug
+description: Report reproducible behavior that differs from the documentation / Relate um comportamento reproduzível diferente da documentação
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve MLI-Knot Keyboard.
+
+        Obrigado por ajudar a melhorar o MLI-Knot Keyboard.
+
+        Do not include passwords, tokens, confidential text, personal data, or vulnerability details. Security issues must be reported through the private channel linked on the issue selection page.
+
+        Não inclua senhas, tokens, texto confidencial, dados pessoais ou detalhes de vulnerabilidade. Problemas de segurança devem ser relatados pelo canal privado indicado na página de seleção de issues.
+
+  - type: input
+    id: version
+    attributes:
+      label: Application version or commit / Versão do aplicativo ou commit
+      description: Provide the release version or commit SHA used / Informe a versão da release ou o SHA do commit utilizado
+      placeholder: v0.1.0 or 998a9b9
+    validations:
+      required: true
+
+  - type: dropdown
+    id: execution_source
+    attributes:
+      label: How did you run the application? / Como você executou o aplicativo?
+      options:
+        - Official GitHub Release executable / Executável oficial da GitHub Release
+        - From source on the current main branch / Pelo código-fonte da branch main atual
+        - From source on another commit or branch / Pelo código-fonte de outro commit ou branch
+        - Unofficial or modified build / Build não oficial ou modificado
+    validations:
+      required: true
+
+  - type: input
+    id: download_source
+    attributes:
+      label: Download source / Origem do download
+      description: When using an executable, state where it was downloaded without posting private links / Ao usar executável, informe de onde foi baixado sem publicar links privados
+      placeholder: Official repository Releases page / Página Releases do repositório oficial
+
+  - type: input
+    id: windows_version
+    attributes:
+      label: Windows version / Versão do Windows
+      placeholder: Windows 11 23H2, Windows 10 22H2
+    validations:
+      required: true
+
+  - type: input
+    id: keyboard_layout
+    attributes:
+      label: Keyboard layout / Layout do teclado
+      placeholder: Portuguese (Brazil) ABNT2, US International
+    validations:
+      required: true
+
+  - type: dropdown
+    id: interface_language
+    attributes:
+      label: Interface language / Idioma da interface
+      options:
+        - Português
+        - English
+        - Both affected / Ambos afetados
+    validations:
+      required: true
+
+  - type: dropdown
+    id: notepad_test
+    attributes:
+      label: Does the problem also occur in Notepad? / O problema também ocorre no Bloco de Notas?
+      description: Test only with fictional, non-sensitive text / Teste apenas com texto fictício e não sensível
+      options:
+        - Yes / Sim
+        - No / Não
+        - Not tested / Não testado
+        - Not applicable / Não aplicável
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps / Passos para reprodução
+      description: Provide the smallest reliable sequence of actions / Informe a menor sequência confiável de ações
+      placeholder: |
+        1. Open the application / Abra o aplicativo
+        2. Enter fictional test text / Insira texto fictício de teste
+        3. Configure... / Configure...
+        4. Observe... / Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior / Comportamento esperado
+    validations:
+      required: true
+
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior / Comportamento observado
+    validations:
+      required: true
+
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Sanitized logs, screenshots, or sample text / Logs, capturas ou texto de exemplo sanitizados
+      description: Remove names, paths, account data, notifications, credentials, and confidential content / Remova nomes, caminhos, dados de conta, notificações, credenciais e conteúdo confidencial
+
+  - type: checkboxes
+    id: safety_confirmation
+    attributes:
+      label: Safety confirmation / Confirmação de segurança
+      options:
+        - label: I used fictional or non-sensitive test data and removed private information from all attachments. / Usei dados fictícios ou não sensíveis e removi informações privadas de todos os anexos.
+          required: true
+        - label: This report does not contain vulnerability details, credentials, or exploitable instructions. / Este relato não contém detalhes de vulnerabilidade, credenciais ou instruções exploráveis.
+          required: true
