@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security report / Relato de segurança
+    url: https://github.com/proftectiagocosta-hash/MLI-Knot-keyboard/security/policy
+    about: Report vulnerabilities privately and do not publish credentials, personal data, or exploitable details in a public issue. / Relate vulnerabilidades de forma privada e não publique credenciais, dados pessoais ou detalhes exploráveis em issue pública.
+  - name: Contribution guide / Guia de contribuição
+    url: https://github.com/proftectiagocosta-hash/MLI-Knot-keyboard/blob/main/CONTRIBUTING.md
+    about: Review project scope, reporting guidance, validation, and privacy requirements before opening an issue. / Consulte escopo, orientações de relato, validação e requisitos de privacidade antes de abrir uma issue.
