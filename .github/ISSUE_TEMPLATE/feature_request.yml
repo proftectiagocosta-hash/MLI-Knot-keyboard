@@ -1,0 +1,72 @@
+name: Feature request / Solicitação de recurso
+description: Propose a capability that preserves the local, visible, user-controlled model / Proponha uma capacidade que preserve o modelo local, visível e controlado pelo usuário
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for intentional product improvements, not vulnerability reports.
+
+        Use este formulário para melhorias intencionais do produto, não para relatos de vulnerabilidade.
+
+        Requests involving spam, credential entry, captcha or login bypass, fraud, anti-fraud evasion, security-control evasion, or unauthorized automation are outside the project scope.
+
+        Pedidos envolvendo spam, inserção de credenciais, bypass de captcha ou login, fraude, evasão antifraude, evasão de controles de segurança ou automação não autorizada estão fora do escopo do projeto.
+
+  - type: textarea
+    id: user_problem
+    attributes:
+      label: User problem / Problema do usuário
+      description: Describe the concrete legitimate problem before proposing the solution / Descreva o problema legítimo concreto antes de propor a solução
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_behavior
+    attributes:
+      label: Proposed behavior / Comportamento proposto
+      description: Explain what the application should do differently / Explique o que o aplicativo deveria fazer de forma diferente
+    validations:
+      required: true
+
+  - type: textarea
+    id: user_impact
+    attributes:
+      label: User-visible impact / Impacto visível para o usuário
+      description: Describe interface, workflow, compatibility, or accessibility changes / Descreva alterações de interface, fluxo, compatibilidade ou acessibilidade
+    validations:
+      required: true
+
+  - type: textarea
+    id: safety_accessibility
+    attributes:
+      label: Safety and accessibility effects / Efeitos de segurança e acessibilidade
+      description: Explain how the proposal preserves local operation, explicit user control, safe cancellation, and privacy / Explique como a proposta preserva operação local, controle explícito, cancelamento seguro e privacidade
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered / Alternativas consideradas
+      description: Describe simpler or safer alternatives already evaluated / Descreva alternativas mais simples ou seguras já avaliadas
+
+  - type: textarea
+    id: validation_plan
+    attributes:
+      label: Validation plan / Plano de validação
+      description: Explain how the feature could be tested without real credentials or confidential content / Explique como o recurso poderia ser testado sem credenciais reais ou conteúdo confidencial
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: scope_confirmation
+    attributes:
+      label: Scope confirmation / Confirmação de escopo
+      options:
+        - label: This request is for legitimate, authorized use and preserves explicit user control. / Este pedido é para uso legítimo e autorizado e preserva o controle explícito do usuário.
+          required: true
+        - label: This request does not involve spam, credential entry, captcha or login bypass, fraud, security-control evasion, or unauthorized automation. / Este pedido não envolve spam, inserção de credenciais, bypass de captcha ou login, fraude, evasão de controles de segurança ou automação não autorizada.
+          required: true
+        - label: I did not include private, personal, confidential, or security-sensitive information. / Não incluí informações privadas, pessoais, confidenciais ou sensíveis de segurança.
+          required: true
